@@ -1,0 +1,14 @@
+version: '3'
+services:
+  user-service:
+    image: user-service
+    container_name: user-service
+    ports:
+      - "8081:8081"
+    restart: always
+    networks:
+      - network-smc
+
+networks:
+  network-smc:
+    external: true

@@ -1,0 +1,11 @@
+server:
+  port: 8081
+
+spring:
+  profiles:
+    active: docker
+
+jwt:
+  issuer: Stock Market Charting
+  secret: Smc4FsD
+  validity: 1800000
